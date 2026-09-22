@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
-  native_proxy_resolver: 8b9a133447dcff7ba8211968c0725fbe9eac9d40
+  native_proxy_resolver: a1aa2f13d0f1f9774858aa391547b8fc479e0d4b
 
 PODFILE CHECKSUM: 54d867c82ac51cbd61b565781b9fada492027009
 

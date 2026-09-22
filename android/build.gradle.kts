@@ -23,6 +23,11 @@ allprojects {
 
 plugins {
     id("com.android.library")
+    // The Kotlin Gradle Plugin is still applied on purpose. AGP's built-in
+    // Kotlin support, which is what would let this line go away, needs AGP 9
+    // and Flutter 3.47, while this plugin supports Flutter 3.35+. Without KGP
+    // there is no `kotlin` extension and the Kotlin sources are not compiled.
+    // See https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
     id("kotlin-android")
 }
 
@@ -36,10 +41,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
     sourceSets {
         getByName("main") {
             java.srcDirs("src/main/kotlin")
@@ -48,5 +49,11 @@ android {
 
     defaultConfig {
         minSdk = 24
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
