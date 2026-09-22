@@ -1,0 +1,28 @@
+name: native_proxy_resolver_example
+description: "Demonstrates every feature of the native_proxy_resolver plugin."
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+  flutter: ">=3.35.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Dio is only used by the example to show the adapter; the plugin itself
+  # does not depend on it.
+  dio: ^5.9.0
+  http: ^1.2.0
+  native_proxy_resolver:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+flutter:
+  uses-material-design: true

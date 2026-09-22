@@ -1,0 +1,56 @@
+name: native_proxy_resolver
+description: "Resolve the OS proxy per URL, including PAC and WPAD auto-config, and plug it into dart:io HttpClient, package:http and Dio. Android, iOS, macOS, Windows, Linux."
+version: 0.1.0
+homepage: https://github.com/Manish1Pandey/native_proxy_resolver
+repository: https://github.com/Manish1Pandey/native_proxy_resolver
+issue_tracker: https://github.com/Manish1Pandey/native_proxy_resolver/issues
+topics:
+  - proxy
+  - network
+  - http
+  - pac
+  - enterprise
+
+screenshots:
+  - description: Example app on the iOS simulator resolving https://example.com/ to DIRECT and fetching it with ProxyAwareHttpClient.
+    path: screenshots/ios_resolve_direct.png
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+  flutter: ">=3.35.0"
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  windows:
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  meta: ^1.15.0
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.manishpanday.native_proxy_resolver
+        pluginClass: NativeProxyResolverPlugin
+      ios:
+        pluginClass: NativeProxyResolverPlugin
+        sharedDarwinSource: true
+      macos:
+        pluginClass: NativeProxyResolverPlugin
+        sharedDarwinSource: true
+      windows:
+        pluginClass: NativeProxyResolverPluginCApi
+      linux:
+        dartPluginClass: NativeProxyResolverLinux
