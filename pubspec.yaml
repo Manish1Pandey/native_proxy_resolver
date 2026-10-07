@@ -1,7 +1,7 @@
 name: native_proxy_resolver
 description: "Resolve the OS proxy per URL, including PAC and WPAD auto-config, and plug it into dart:io HttpClient, package:http and Dio. Android, iOS, macOS, Windows, Linux."
 version: 0.1.0
-homepage: https://github.com/Manish1Pandey/native_proxy_resolver
+homepage: https://flutterdev.in/packages/native_proxy_resolver/
 repository: https://github.com/Manish1Pandey/native_proxy_resolver
 issue_tracker: https://github.com/Manish1Pandey/native_proxy_resolver/issues
 topics:

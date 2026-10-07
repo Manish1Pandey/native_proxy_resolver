@@ -162,3 +162,9 @@ download PAC scripts from inside the sandbox. Android adds
 [`example/`](example/) resolves any URL, shows source/PAC/errors, fetches it
 through `ProxyAwareHttpClient`, `package:http`, Dio and a plain `HttpClient()`
 with the global overrides toggled, and lists change events.
+
+## Links
+
+- **Documentation:** [flutterdev.in/packages/native_proxy_resolver](https://flutterdev.in/packages/native_proxy_resolver/)
+- **More Flutter packages:** [flutterdev.in](https://flutterdev.in)
+- **Learn data structures & algorithms in Dart:** [Algoistan](https://algoistan.flutterdev.in)
