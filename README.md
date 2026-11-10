@@ -34,10 +34,10 @@ dependencies:
 ```dart
 import 'package:native_proxy_resolver/native_proxy_resolver.dart';
 
-final proxies = await SystemProxy.resolve(Uri.parse('https://example.com'));
+final proxies = await SystemProxy.resolve(Uri.parse('https://flutterdev.in'));
 // [PROXY proxy.corp:8080, DIRECT]   or   [DIRECT]
 
-final detail = await SystemProxy.resolveDetailed(Uri.parse('https://example.com'));
+final detail = await SystemProxy.resolveDetailed(Uri.parse('https://flutterdev.in'));
 print(detail.source);   // pac, autoDetect, manual, environment, none
 print(detail.pacUrl);   // http://wpad.corp/wpad.dat
 print(detail.error);    // e.g. "PAC evaluation timed out" (entries fall back to DIRECT)
@@ -98,7 +98,7 @@ a redirect to a never-seen origin uses `fallback` for that hop. Set
 import 'package:native_proxy_resolver/http.dart';
 
 final client = createSystemProxyHttpClient();
-final response = await client.get(Uri.parse('https://example.com'));
+final response = await client.get(Uri.parse('https://flutterdev.in'));
 client.close();
 ```
 

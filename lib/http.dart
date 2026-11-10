@@ -4,7 +4,7 @@
 /// import 'package:native_proxy_resolver/http.dart';
 ///
 /// final client = createSystemProxyHttpClient();
-/// final response = await client.get(Uri.parse('https://example.com'));
+/// final response = await client.get(Uri.parse('https://flutterdev.in'));
 /// ```
 library;
 

@@ -18,7 +18,7 @@ void main() {
 
   testWidgets('native resolver answers for http and https URLs', (_) async {
     final resolver = SystemProxyResolver();
-    for (final url in ['https://example.com/', 'http://example.com/']) {
+    for (final url in ['https://flutterdev.in/', 'http://flutterdev.in/']) {
       final resolution = await resolver.resolveDetailed(Uri.parse(url));
       // ignore: avoid_print
       print('native_proxy_resolver: $resolution');
@@ -32,7 +32,7 @@ void main() {
       }
     }
     // Second lookup is cached.
-    expect(resolver.cached(Uri.parse('https://example.com/other')), isNotNull);
+    expect(resolver.cached(Uri.parse('https://flutterdev.in/other')), isNotNull);
     await resolver.dispose();
   });
 

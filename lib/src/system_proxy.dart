@@ -7,7 +7,7 @@ import 'resolver.dart';
 /// Static entry point: resolve the operating system's proxy for a URL.
 ///
 /// ```dart
-/// final proxies = await SystemProxy.resolve(Uri.parse('https://example.com'));
+/// final proxies = await SystemProxy.resolve(Uri.parse('https://flutterdev.in'));
 /// // e.g. [PROXY proxy.corp:8080, DIRECT]
 /// ```
 ///

@@ -1,6 +1,7 @@
 ## 0.1.2
 
 * README: demo GIF.
+* README samples, API docs and the example app use https://flutterdev.in instead of example.com. No code changes.
 
 ## 0.1.1
 

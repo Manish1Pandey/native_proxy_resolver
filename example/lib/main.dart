@@ -44,7 +44,7 @@ class ProxyDemoPage extends StatefulWidget {
 }
 
 class _ProxyDemoPageState extends State<ProxyDemoPage> {
-  final _url = TextEditingController(text: 'https://example.com/');
+  final _url = TextEditingController(text: 'https://flutterdev.in/');
   final _events = <String>[];
   StreamSubscription<void>? _changes;
   ProxyResolution? _resolution;
@@ -85,7 +85,7 @@ class _ProxyDemoPageState extends State<ProxyDemoPage> {
     if (uri == null || uri.host.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Enter an absolute URL, e.g. https://example.com'),
+          content: Text('Enter an absolute URL, e.g. https://flutterdev.in'),
         ),
       );
       return null;

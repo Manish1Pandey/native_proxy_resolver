@@ -43,7 +43,7 @@ void main() {
     await tester.tap(find.byKey(const Key('resolve')));
     await tester.pumpAndSettle();
 
-    expect(platform.requested.single, Uri.parse('https://example.com/'));
+    expect(platform.requested.single, Uri.parse('https://flutterdev.in/'));
     expect(find.text('1. PROXY proxy.corp:8080'), findsOneWidget);
     expect(
       find.text('2. SOCKS5 socks.corp:1080  (not usable by dart:io)'),
