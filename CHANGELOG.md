@@ -1,3 +1,7 @@
+## 0.1.3
+
+* README and pub.dev screenshots: the demo GIF (resolving https://flutterdev.in/) replaces the older example.com screenshot. No code changes.
+
 ## 0.1.2
 
 * README: demo GIF.

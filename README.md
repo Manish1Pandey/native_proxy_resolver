@@ -4,8 +4,6 @@ Resolve the **operating system's proxy for each URL** — including **PAC
 scripts and WPAD auto-discovery** used on corporate networks — and plug the
 answer into `dart:io` `HttpClient`, `package:http` and Dio.
 
-<img src="https://raw.githubusercontent.com/Manish1Pandey/native_proxy_resolver/main/screenshots/ios_resolve_direct.png" width="300" alt="Example app on the iOS simulator: https://example.com/ resolves to DIRECT (source none) and ProxyAwareHttpClient gets HTTP 200">
-
 ![The macOS example resolves https://flutterdev.in/ to DIRECT and fetches it with ProxyAwareHttpClient, package:http and Dio, each returning HTTP 200](screenshots/demo.gif)
 
 *The example app on macOS: the URL is resolved by the operating system's proxy resolver (this Mac has no proxy, so the route is DIRECT), then fetched through ProxyAwareHttpClient, package:http and Dio, each using that route.*
